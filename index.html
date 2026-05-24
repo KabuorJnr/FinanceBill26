@@ -705,7 +705,687 @@
     </div>
   </div>
 
-  <!-- remaining content omitted for brevity in patch -->
+  <!-- ─── COMPARE CLAUSES ─── -->
+  <section id="compare" class="compare-section">
+    <div class="section-heading">
+      <h2>Clause Comparison</h2>
+      <span class="sw">Ulinganisho wa Vifungu</span>
+      <span class="num">§ ANALYSIS</span>
+    </div>
+
+    <div class="compare-tabs">
+      <button class="tab-btn active" onclick="switchTab('income')"><span class="tab-emoji">💰</span>Income Tax</button>
+      <button class="tab-btn" onclick="switchTab('vat')"><span class="tab-emoji">🛒</span>VAT</button>
+      <button class="tab-btn" onclick="switchTab('excise')"><span class="tab-emoji">📱</span>Excise Duty</button>
+      <button class="tab-btn" onclick="switchTab('digital')"><span class="tab-emoji">🌐</span>Digital Economy</button>
+      <button class="tab-btn" onclick="switchTab('compliance')"><span class="tab-emoji">📋</span>Compliance</button>
+    </div>
+
+    <!-- INCOME TAX -->
+    <div id="tab-income" class="tab-content active">
+      <table>
+        <thead>
+          <tr>
+            <th>Proposal</th>
+            <th>Before / Kabla</th>
+            <th>After / Baada</th>
+            <th>Impact / Athari</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Residential Rental Income Tax</strong><br><small style="color:var(--muted)">Kodi ya pango — nyumba</small></td>
+            <td>7.5% of gross rent</td>
+            <td>10% of gross rent</td>
+            <td class="impact-hi">High — landlords likely pass cost to tenants. Urban renters most affected.</td>
+            <td><span class="badge badge-drop">⚠ DROPPED</span></td>
+          </tr>
+          <tr>
+            <td><strong>Non-Resident Rental Tax</strong><br><small style="color:var(--muted)">Kodi ya pango — wageni</small></td>
+            <td>No specific regime</td>
+            <td>30% on immovable property gross rent; 15% on movable</td>
+            <td class="impact-med">Targets foreign property owners. Minimal direct effect on ordinary Kenyans.</td>
+            <td><span class="badge badge-new">NEW</span></td>
+          </tr>
+          <tr>
+            <td><strong>Digital Content Withholding Tax</strong><br><small style="color:var(--muted)">Kodi kwa wablogu/YouTubers</small></td>
+            <td>Not applicable</td>
+            <td>5% withholding on payments to creators</td>
+            <td class="impact-hi">High — directly affects YouTubers, TikTokers, podcasters, bloggers.</td>
+            <td><span class="badge badge-new">NEW</span></td>
+          </tr>
+          <tr>
+            <td><strong>Tax Filing Deadline</strong><br><small style="color:var(--muted)">Tarehe ya kujaza fomu ya kodi</small></td>
+            <td>June 30 (6 months after year-end)</td>
+            <td>April 30 (4 months); Nil returns by Jan 31</td>
+            <td class="impact-med">Medium — individuals must file earlier. Check your KRA obligations.</td>
+            <td><span class="badge badge-up">CHANGED</span></td>
+          </tr>
+          <tr>
+            <td><strong>Trust Income Taxation</strong><br><small style="color:var(--muted)">Kodi ya mapato ya amana</small></td>
+            <td>Unclear/contested</td>
+            <td>Trustees/executors bear tax; beneficiaries exempt from double tax</td>
+            <td class="impact-lo">Low everyday impact. Clarifies existing uncertainty. Positive for estate planning.</td>
+            <td><span class="badge badge-good">CLARIFIED</span></td>
+          </tr>
+          <tr>
+            <td><strong>Tax Amnesty Extension</strong><br><small style="color:var(--muted)">Msamaha wa faini za kodi</small></td>
+            <td>Deadline was Dec 2023</td>
+            <td>Pay principal by Dec 31 2026; penalties/interest waived</td>
+            <td class="impact-lo">Positive — if you owe back taxes, you can settle the principal and avoid fines.</td>
+            <td><span class="badge badge-good">POSITIVE</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- VAT -->
+    <div id="tab-vat" class="tab-content">
+      <table>
+        <thead>
+          <tr>
+            <th>Item / Bidhaa</th>
+            <th>Before / Kabla</th>
+            <th>After / Baada</th>
+            <th>Effect on You / Athari kwako</th>
+            <th>Type</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Mobile Phones</strong><br><small style="color:var(--muted)">Simu za mkononi</small></td>
+            <td>16% VAT</td>
+            <td>VAT EXEMPT (0%)</td>
+            <td class="impact-lo">Good news — VAT removed. But note: excise duty at 25% still applies on activation.</td>
+            <td><span class="badge badge-good">EXEMPTED</span></td>
+          </tr>
+          <tr>
+            <td><strong>Digital Financial Services</strong><br><small style="color:var(--muted)">M-Pesa, payment apps</small></td>
+            <td>Exempt from VAT</td>
+            <td>Standard 16% VAT applied</td>
+            <td class="impact-hi">High — money transfers, M-Pesa, payment gateways become more expensive for users and businesses.</td>
+            <td><span class="badge badge-new">NEW TAX</span></td>
+          </tr>
+          <tr>
+            <td><strong>PPP Infrastructure Goods</strong><br><small style="color:var(--muted)">Miradi ya ubia – serikali na sekta binafsi</small></td>
+            <td>Standard VAT applied</td>
+            <td>VAT exempt</td>
+            <td class="impact-lo">Positive — lowers cost for public-private partnership projects (roads, hospitals, etc.)</td>
+            <td><span class="badge badge-good">EXEMPTED</span></td>
+          </tr>
+          <tr>
+            <td><strong>Real Estate Investment Trust transfers</strong><br><small style="color:var(--muted)">Mauzo ya mali – REIT</small></td>
+            <td>Capital gains tax + stamp duty</td>
+            <td>Exempt from CGT and stamp duty</td>
+            <td class="impact-lo">Positive — encourages property investment. Benefits real estate sector.</td>
+            <td><span class="badge badge-good">EXEMPTED</span></td>
+          </tr>
+          <tr>
+            <td><strong>Fruit Juices</strong><br><small style="color:var(--muted)">Juisi za matunda</small></td>
+            <td>Lower / no excise on some</td>
+            <td>Ksh 14–20 per litre based on sugar content</td>
+            <td class="impact-med">Medium — juice prices likely to rise. Affects households and small kiosks.</td>
+            <td><span class="badge badge-up">INCREASED</span></td>
+          </tr>
+          <tr>
+            <td><strong>Animal blood, dialysers</strong><br><small style="color:var(--muted)">Dawa za hospitali</small></td>
+            <td>Taxed</td>
+            <td>VAT exempt</td>
+            <td class="impact-lo">Good — lower cost of medical supplies and animal feeds.</td>
+            <td><span class="badge badge-good">EXEMPTED</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- EXCISE -->
+    <div id="tab-excise" class="tab-content">
+      <table>
+        <thead>
+          <tr>
+            <th>Item / Bidhaa</th>
+            <th>Before Rate</th>
+            <th>New Rate</th>
+            <th>Key Change</th>
+            <th>Impact</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Mobile Phones</strong><br><small style="color:var(--muted)">Simu — excise duty</small></td>
+            <td>10% at point of import</td>
+            <td><strong>25%</strong> at point of network activation</td>
+            <td>Collection point moves from border to when you activate a SIM. Treasury says this consolidates VAT + IDF + RDL into one charge.</td>
+            <td class="impact-hi">High — net effect on prices debated; government claims overall burden may be lower.</td>
+          </tr>
+          <tr>
+            <td><strong>Betting / Gambling winnings</strong><br><small style="color:var(--muted)">Faida za kamari</small></td>
+            <td>7.5% excise duty</td>
+            <td><strong>20%</strong> excise duty</td>
+            <td>Significant increase targeting gambling sector.</td>
+            <td class="impact-hi">High for gamblers. Government frames as deterrence.</td>
+          </tr>
+          <tr>
+            <td><strong>Antique / Vintage Vehicles</strong><br><small style="color:var(--muted)">Magari ya zamani – zaidi ya miaka 30</small></td>
+            <td>No specific rate</td>
+            <td>50% excise duty (if value ≥ KES 10M)</td>
+            <td>New classification for collector vehicles 30+ years old.</td>
+            <td class="impact-lo">Low everyday impact. Affects luxury collectors.</td>
+          </tr>
+          <tr>
+            <td><strong>Second-hand clothes (Mitumba)</strong><br><small style="color:var(--muted)">Nguo za mitumba</small></td>
+            <td>Standard import duties</td>
+            <td>5% deemed profit tax on customs value at importation</td>
+            <td>New income tax on mitumba importers at point of entry.</td>
+            <td><span class="badge badge-drop">⚠ DROPPED</span></td>
+          </tr>
+          <tr>
+            <td><strong>Scrap Metal</strong><br><small style="color:var(--muted)">Chuma cha taka</small></td>
+            <td>Taxed under general regime</td>
+            <td>VAT exempt on scrap metal</td>
+            <td>Exemption aims to encourage formal recycling sector.</td>
+            <td class="impact-lo">Positive for recycling industry.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- DIGITAL ECONOMY -->
+    <div id="tab-digital" class="tab-content">
+      <table>
+        <thead>
+          <tr>
+            <th>Area / Eneo</th>
+            <th>Proposal / Pendekezo</th>
+            <th>Who it affects / Nani ataathiriwa</th>
+            <th>Impact Level</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Virtual Asset Service Providers</strong><br><small style="color:var(--muted)">Biashara za crypto / NFT</small></td>
+            <td>Must file annual returns on users; KRA can share info with other countries automatically.</td>
+            <td>Crypto traders, Bitcoin holders, NFT sellers</td>
+            <td class="impact-hi">High transparency requirement — reduces anonymity in crypto.</td>
+          </tr>
+          <tr>
+            <td><strong>Digital Content Monetisation</strong><br><small style="color:var(--muted)">YouTubers, TikTokers, bloggers</small></td>
+            <td>5% withholding tax on all digital creator payments</td>
+            <td>Content creators earning from social media platforms</td>
+            <td class="impact-hi">High — creators lose 5% of every platform payment automatically.</td>
+          </tr>
+          <tr>
+            <td><strong>Card Transaction Fees (Merchant/Interchange)</strong><br><small style="color:var(--muted)">Ada za kadi za benki</small></td>
+            <td>Now classified as "management fees" — subject to withholding tax</td>
+            <td>Banks, card processors, businesses accepting card payments</td>
+            <td class="impact-med">Medium — may increase cost of card payment acceptance for merchants.</td>
+          </tr>
+          <tr>
+            <td><strong>Software & Platform Royalties</strong><br><small style="color:var(--muted)">Ada za programu / majukwaa</small></td>
+            <td>Definition of "royalty" expanded to include payment network fees, software, digital platforms</td>
+            <td>Tech companies, SaaS providers, payment networks</td>
+            <td class="impact-med">Medium — affects multinational tech firms operating in Kenya.</td>
+          </tr>
+          <tr>
+            <td><strong>Digital Money Transfers (M-Pesa, etc.)</strong><br><small style="color:var(--muted)">Uhamisho wa pesa wa kidijitali</small></td>
+            <td>Previously VAT-exempt</td>
+            <td>Now subject to 16% VAT</td>
+            <td class="impact-hi">High — every M-Pesa transaction, payment processing could get more expensive.</td>
+          </tr>
+          <tr>
+            <td><strong>Country-by-Country (CbC) Reporting</strong><br><small style="color:var(--muted)">Ripoti za kampuni za kimataifa</small></td>
+            <td>Applies only to parent companies</td>
+            <td>Expanded to constituent entities within multinationals</td>
+            <td class="impact-lo">Low for individuals. Increases transparency on multinationals' tax practices.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- COMPLIANCE -->
+    <div id="tab-compliance" class="tab-content">
+      <table>
+        <thead>
+          <tr>
+            <th>Measure / Hatua</th>
+            <th>Detail / Maelezo</th>
+            <th>Public Concern / Wasiwasi</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>KRA Agency Notices</strong><br><small style="color:var(--muted)">Barua za KRA kukusanya kodi</small></td>
+            <td>KRA to be allowed to issue agency notices (forcing third parties to pay your debt) even while you have an active appeal at the Tax Appeals Tribunal.</td>
+            <td class="impact-hi">High concern — removes protection for taxpayers appealing disputed amounts.</td>
+            <td><span class="badge badge-new">PROPOSED</span></td>
+          </tr>
+          <tr>
+            <td><strong>Phone Activation Tracking</strong><br><small style="color:var(--muted)">Ufuatiliaji wa simu</small></td>
+            <td>Communications Authority will develop rules to collect excise duty at phone activation on networks.</td>
+            <td class="impact-med">Concerns raised about data surveillance. Government says Data Protection Act compliance is required.</td>
+            <td><span class="badge badge-new">PROPOSED</span></td>
+          </tr>
+          <tr>
+            <td><strong>Objection Timelines</strong><br><small style="color:var(--muted)">Muda wa kupinga</small></td>
+            <td>Calculation changed from working days to calendar days — means fewer days to file a tax objection.</td>
+            <td class="impact-med">Medium concern — shortens window for taxpayers to object.</td>
+            <td><span class="badge badge-up">CHANGED</span></td>
+          </tr>
+          <tr>
+            <td><strong>Tax Amnesty</strong><br><small style="color:var(--muted)">Msamaha wa madeni ya kodi</small></td>
+            <td>If your principal tax was owed up to Dec 31 2025 and you pay it by Dec 31 2026, all penalties and interest are waived.</td>
+            <td class="impact-lo">Positive — opportunity to clear old tax debts cleanly.</td>
+            <td><span class="badge badge-good">POSITIVE</span></td>
+          </tr>
+          <tr>
+            <td><strong>Carriage Income (Shipping Tax)</strong><br><small style="color:var(--muted)">Kodi ya usafirishaji baharini</small></td>
+            <td>Tax on ship income now due within 5 days of payment receipt or when ship leaves port.</td>
+            <td class="impact-lo">Low everyday impact. Affects shipping companies at Mombasa Port.</td>
+            <td><span class="badge badge-up">CHANGED</span></td>
+          </tr>
+          <tr>
+            <td><strong>Non-Resident PIN Exemption</strong><br><small style="color:var(--muted)">Raia wa kigeni – akaunti za uwekezaji</small></td>
+            <td>Foreigners no longer need a KRA PIN to open investment bank accounts in Kenya.</td>
+            <td class="impact-lo">Positive for attracting foreign investment.</td>
+            <td><span class="badge badge-good">POSITIVE</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- ─── CARDS — KEY IMPACTS ─── -->
+  <section id="impact">
+    <div class="section-heading">
+      <h2>Key Impacts Explained</h2>
+      <span class="sw">Athari Kuu</span>
+      <span class="num">§ IMPACTS</span>
+    </div>
+    <div class="cards">
+      <div class="card danger">
+        <span class="card-icon">📱</span>
+        <h4>Mobile Phone Tax</h4>
+        <div class="sw">Ushuru wa Simu</div>
+        <p>VAT on phones is removed — but a 25% excise duty kicks in when you first activate the phone on a network. Treasury argues this consolidates multiple existing taxes (VAT + Import fees + Railway levy). Critics warn it could raise prices for low-income buyers.</p>
+        <div class="rate">Before: <strong>~55% combined taxes</strong> (import + VAT) → After: <strong>25% excise at activation</strong></div>
+      </div>
+      <div class="card danger">
+        <span class="card-icon">🌐</span>
+        <h4>Digital Money Transfers</h4>
+        <div class="sw">Uhamisho wa Pesa – M-Pesa n.k.</div>
+        <p>Mobile money and digital payment services previously exempt from VAT will now attract 16% VAT. This includes M-Pesa transfers, payment gateways, and processing services. Could raise transaction costs for ordinary users and small businesses.</p>
+        <div class="rate">Before: <strong>Exempt</strong> → After: <strong>16% VAT applied</strong></div>
+      </div>
+      <div class="card danger">
+        <span class="card-icon">🎬</span>
+        <h4>Content Creator Tax</h4>
+        <div class="sw">Kodi ya Wabuni wa Maudhui</div>
+        <p>If you earn money from YouTube, TikTok, Instagram, podcasting or any digital platform, 5% will be withheld from every payment you receive. The 2024 Bill proposed 1.5% — 2026's rate is more than three times higher.</p>
+        <div class="rate">Before: <strong>0%</strong> → After: <strong>5% withholding tax</strong></div>
+      </div>
+      <div class="card caution">
+        <span class="card-icon">🎰</span>
+        <h4>Betting Winnings</h4>
+        <div class="sw">Faida za Kamari</div>
+        <p>If you win from betting, sports betting, or gambling, the government will take 20% excise duty from your winnings — up significantly from the previous rate. Affects Kenya's large sports betting market.</p>
+        <div class="rate">Before: <strong>7.5%</strong> → After: <strong>20%</strong></div>
+      </div>
+      <div class="card caution">
+        <span class="card-icon">🏠</span>
+        <h4>Rental Income Tax</h4>
+        <div class="sw">Kodi ya Pango</div>
+        <p>The bill originally proposed raising the residential rental tax from 7.5% to 10%. Analysts warned landlords would pass this cost to tenants, worsening housing affordability in Nairobi and Mombasa. <strong>This proposal was later dropped.</strong></p>
+        <div class="rate">Proposed: <strong>7.5% → 10%</strong> — <strong style="color:var(--green)">DROPPED ✓</strong></div>
+      </div>
+      <div class="card good">
+        <span class="card-icon">🤝</span>
+        <h4>Tax Amnesty Opportunity</h4>
+        <div class="sw">Msamaha wa Madeni ya Kodi</div>
+        <p>If you have outstanding tax debts from periods up to December 2025, you can pay just the principal by December 31, 2026, and all fines and interest will be waived. This is an important opportunity to regularise your tax status.</p>
+        <div class="rate good-rate">Action: Pay principal by <strong>31 Dec 2026</strong> → penalties waived</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── DROPPED PROPOSALS ─── -->
+  <section id="dropped">
+    <div class="section-heading">
+      <h2>Proposals Dropped After Public Pressure</h2>
+      <span class="sw">Mapendekezo Yaliyoondolewa</span>
+      <span class="num">§ DROPPED</span>
+    </div>
+    <p style="margin-bottom:20px; color:var(--muted); font-size:0.9rem;">The Finance Bill 2026 underwent revisions following public scrutiny. These proposals were <strong>withdrawn</strong> before Parliamentary vote — a reminder that civic engagement works.</p>
+    <div class="cards" style="margin-bottom:48px">
+      <div class="card dropped">
+        <span class="card-icon">👔</span>
+        <h4>Mitumba Tax (Dropped)</h4>
+        <div class="sw">Kodi ya Nguo za Mitumba — Imeondolewa</div>
+        <p>The 5% deemed profit tax on imported second-hand clothing (mitumba) would have raised prices in Kenya's massive second-hand clothing markets. The proposal was withdrawn after widespread criticism from traders and consumers who rely on mitumba for affordable clothing.</p>
+        <div class="rate good-rate"><strong>Status: DROPPED ✓</strong> — nguo za mitumba hazitaathirika</div>
+      </div>
+      <div class="card dropped">
+        <span class="card-icon">🏘️</span>
+        <h4>Rental Income Tax Hike (Dropped)</h4>
+        <div class="sw">Ongezeko la Kodi ya Pango — Limeondolewa</div>
+        <p>The increase from 7.5% to 10% on residential rental income was dropped. Critics noted the higher rate had failed before (it was 10% from 2016–2023 and led to non-compliance). Analysts argued tenants would bear the cost through higher rents.</p>
+        <div class="rate good-rate"><strong>Status: DROPPED ✓</strong> — inabaki 7.5%</div>
+      </div>
+      <div class="card dropped">
+        <span class="card-icon">🩸</span>
+        <h4>Medical Supplies VAT Exemption Change (Revised)</h4>
+        <div class="sw">VAT ya Dawa — Imerekebishwa</div>
+        <p>A proposal to exempt human blood and animal blood prepared for therapeutic use was flagged as procedurally inconsistent. The bill was revised to clarify VAT treatment of medical supplies, with animal blood-based products and dialysers receiving proper exemptions.</p>
+        <div class="rate good-rate"><strong>Status: REVISED ✓</strong> — exemptions clarified</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── WHO IS AFFECTED ─── -->
+  <section>
+    <div class="section-heading">
+      <h2>Who Is Most Affected?</h2>
+      <span class="sw">Nani Ataathiriwa Zaidi?</span>
+    </div>
+    <div class="affected-grid">
+      <div class="affected-card">
+        <div class="icon">📱</div>
+        <h5>Phone Users</h5>
+        <div class="sw-sm">Watumiaji wa Simu</div>
+        <p>New 25% excise at phone activation; VAT removed. Net effect depends on device type.</p>
+        <div class="meter"><div class="meter-fill fill-hi"></div></div>
+      </div>
+      <div class="affected-card">
+        <div class="icon">🎬</div>
+        <h5>Content Creators</h5>
+        <div class="sw-sm">Wabuni wa Maudhui</div>
+        <p>5% withholding tax on all platform income. YouTubers, podcasters, TikTokers affected.</p>
+        <div class="meter"><div class="meter-fill fill-hi"></div></div>
+      </div>
+      <div class="affected-card">
+        <div class="icon">💸</div>
+        <h5>Mobile Money Users</h5>
+        <div class="sw-sm">Watumiaji wa M-Pesa</div>
+        <p>VAT on digital transfers could raise transaction costs. Affects nearly all adult Kenyans.</p>
+        <div class="meter"><div class="meter-fill fill-hi"></div></div>
+      </div>
+      <div class="affected-card">
+        <div class="icon">🏠</div>
+        <h5>Tenants / Renters</h5>
+        <div class="sw-sm">Wapangaji</div>
+        <p>Rental tax hike was dropped. Reduced concern for now — but monitor implementation.</p>
+        <div class="meter"><div class="meter-fill fill-lo"></div></div>
+      </div>
+      <div class="affected-card">
+        <div class="icon">👔</div>
+        <h5>Mitumba Traders</h5>
+        <div class="sw-sm">Wafanyabiashara wa Mitumba</div>
+        <p>Mitumba tax was dropped. No new specific burden from this bill.</p>
+        <div class="meter"><div class="meter-fill fill-lo"></div></div>
+      </div>
+      <div class="affected-card">
+        <div class="icon">🔐</div>
+        <h5>Crypto / NFT Traders</h5>
+        <div class="sw-sm">Wafanyabiashara wa Crypto</div>
+        <p>Must report to KRA. Reduced anonymity; KRA can share info internationally.</p>
+        <div class="meter"><div class="meter-fill fill-med"></div></div>
+      </div>
+      <div class="affected-card">
+        <div class="icon">🃏</div>
+        <h5>Sports Bettors</h5>
+        <div class="sw-sm">Wachezaji wa Kamari</div>
+        <p>Excise duty on winnings rises sharply from 7.5% to 20%.</p>
+        <div class="meter"><div class="meter-fill fill-hi"></div></div>
+      </div>
+      <div class="affected-card">
+        <div class="icon">🏗️</div>
+        <h5>PPP / Infrastructure</h5>
+        <div class="sw-sm">Miradi ya PPP</div>
+        <p>VAT exemption for PPP projects — positive for roads, hospitals, public works.</p>
+        <div class="meter"><div class="meter-fill fill-lo"></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── TIMELINE ─── -->
+  <section id="timeline">
+    <div class="section-heading">
+      <h2>Key Dates</h2>
+      <span class="sw">Tarehe Muhimu</span>
+      <span class="num">§ TIMELINE</span>
+    </div>
+    <div class="timeline">
+      <div class="tl-item">
+        <div class="tl-dot red">📄</div>
+        <div class="tl-body">
+          <div class="tl-date">30 APRIL 2026</div>
+          <h4>Finance Bill 2026 Released</h4>
+          <p>National Treasury publishes the Finance Bill. Public can now read and react to proposals.</p>
+        </div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-dot gold">🏛️</div>
+        <div class="tl-body">
+          <div class="tl-date">5 MAY 2026</div>
+          <h4>Bill Tabled in National Assembly</h4>
+          <p>National Assembly accepts Bill No. 26 for consideration. Public participation opened.</p>
+        </div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-dot">✍️</div>
+        <div class="tl-body">
+          <div class="tl-date">MAY 2026</div>
+          <h4>Public Participation Period</h4>
+          <p>Kenyans invited to submit written memoranda. Several proposals revised or dropped in response to feedback.</p>
+        </div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-dot">🗳️</div>
+        <div class="tl-body">
+          <div class="tl-date">JUNE 2026 (Expected)</div>
+          <h4>Parliamentary Debate & Vote</h4>
+          <p>MPs debate and vote on the Bill. Expected to pass before June 30 deadline.</p>
+        </div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-dot red">⚡</div>
+        <div class="tl-body">
+          <div class="tl-date">1 JULY 2026</div>
+          <h4>Most Provisions Take Effect</h4>
+          <p>Phone excise duty, digital VAT, betting tax, filing deadline changes, and most other measures begin.</p>
+        </div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-dot green">🌐</div>
+        <div class="tl-body">
+          <div class="tl-date">1 JANUARY 2027</div>
+          <h4>Digital Reporting Requirements</h4>
+          <p>Virtual asset service providers must begin annual information returns on users. CbC reporting changes apply.</p>
+        </div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-dot green">🕊️</div>
+        <div class="tl-body">
+          <div class="tl-date">31 DECEMBER 2026</div>
+          <h4>Tax Amnesty Deadline</h4>
+          <p>Last day to pay outstanding principal tax and have all penalties and interest waived.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── YOUR VOICE ─── -->
+  <section id="participate">
+    <div class="section-heading">
+      <h2>Your Voice Matters</h2>
+      <span class="sw">Sauti Yako Inahitajika</span>
+    </div>
+    <div class="participate-box">
+      <div>
+        <h3>How to Participate</h3>
+        <div class="sw">Jinsi ya Kushiriki</div>
+        <p>Parliament invites all Kenyans to submit written memoranda on the Finance Bill 2026. Your feedback directly influences what gets changed — as we saw with the mitumba and rental tax proposals that were dropped.</p>
+        <p style="margin-top:10px">Recall: In June 2024, public protests led to the Finance Bill 2024 being <strong>entirely withdrawn</strong>. Civic participation works.</p>
+        <a href="https://www.parliament.go.ke" target="_blank">Visit Parliament's Website →</a>
+      </div>
+      <div>
+        <h3>Jinsi ya Kutoa Maoni Yako</h3>
+        <ul>
+          <li><strong>Andika barua</strong> — Submit a written memorandum to the National Assembly Finance Committee</li>
+          <li><strong>Hudhuria vikao</strong> — Attend public participation hearings in your county</li>
+          <li><strong>Wasiliana na Mbunge wako</strong> — Contact your Member of Parliament directly</li>
+          <li><strong>Shiriki mtandaoni</strong> — Engage on social media with #FinanceBill2026</li>
+          <li><strong>Wasiliana na mashirika ya kiraia</strong> — Contact civil society organisations monitoring the Bill</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── FAQ ─── -->
+  <section id="faq">
+    <div class="section-heading">
+      <h2>Frequently Asked Questions</h2>
+      <span class="sw">Maswali Yanayoulizwa Mara Kwa Mara</span>
+    </div>
+    <div class="faq">
+
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">
+          Will my M-Pesa transactions become more expensive?
+          <span class="arrow">▼</span>
+        </div>
+        <div class="faq-a">
+          <div class="faq-a-inner">
+            Likely yes, unless the provision is amended. The Bill proposes to subject digital financial services — including money transfers, payment processing, and payment gateways — to 16% VAT. These services were previously exempt. The actual impact will depend on whether service providers absorb this cost or pass it to users.
+            <div class="sw-note">🇰🇪 Kiswahili: Mapendekezo yanasema huduma za M-Pesa na uhamishaji wa pesa mtandaoni sasa zitatozwa VAT ya 16%. Hii inaweza kuongeza gharama za kuhamisha pesa.</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">
+          Does the phone tax mean my new phone will cost 25% more?
+          <span class="arrow">▼</span>
+        </div>
+        <div class="faq-a">
+          <div class="faq-a-inner">
+            Not exactly. The 25% excise duty replaces several existing charges (16% VAT + Import Declaration Fee + Railway Development Levy). Treasury CS John Mbadi argues the combined old taxes totalled roughly 55%, so 25% is actually a reduction. However, critics note the shift from importation to activation creates new logistical and cost complexities. The net effect on retail prices remains disputed.
+            <div class="sw-note">🇰🇪 Kiswahili: Serikali inasema ushuru mpya wa 25% unabadilisha kodi nyingi zilizokuwepo kabla (jumla ya ~55%). Wasiwasi upo kuhusu jinsi unavyoweza kuathiri bei za simu.</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">
+          I earn from YouTube / TikTok. How does this affect me?
+          <span class="arrow">▼</span>
+        </div>
+        <div class="faq-a">
+          <div class="faq-a-inner">
+            If the Bill passes, 5% of every payment you receive from any digital platform (YouTube AdSense, TikTok, sponsored content, etc.) will be withheld before you receive it. This is a withholding tax, not an additional tax on top — it's collected at source and credited against your annual income tax. The concern is the rate: 2024's bill proposed 1.5%; 2026's is 5%, hitting emerging creators hardest.
+            <div class="sw-note">🇰🍃 Kiswahili: Kama unapata pesa kutoka YouTube, TikTok au jukwaa lolote la kidijitali, 5% ya kila malipo itakatwa kabla ya kupokea. Hii ni changamoto kubwa kwa wabuniwa wachanga.</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">
+          I sell mitumba. Do I have to pay the new tax?
+          <span class="arrow">▼</span>
+        </div>
+        <div class="faq-a">
+          <div class="faq-a-inner">
+            No — the mitumba tax proposal (5% deemed profit on imported second-hand clothing) was dropped following public pressure. Mitumba importers and traders are not subject to this new provision. However, you should continue to comply with existing import duties and income tax obligations.
+            <div class="sw-note">🇰🇪 Kiswahili: Hapana — pendekezo la kodi ya mitumba limeondolewa. Wafanyabiashara wa mitumba hawataathirika na sheria hii mpya.</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">
+          I have unpaid KRA taxes from previous years. What should I do?
+          <span class="arrow">▼</span>
+        </div>
+        <div class="faq-a">
+          <div class="faq-a-inner">
+            The Bill offers a tax amnesty: if your principal tax debt relates to periods up to December 31, 2025, and you pay the principal by December 31, 2026, all penalties and accumulated interest will be waived. This is a significant opportunity. Consult a tax advisor or contact KRA directly to assess your position.
+            <div class="sw-note">🇰🇪 Kiswahili: Kuna msamaha wa kodi. Kama una deni la kodi kabla ya Desemba 2025 na ukilipa kiasi cha msingi kabla ya Desemba 2026, faini na riba zote zitafutwa.</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">
+          Can I do anything to stop or change proposals I disagree with?
+          <span class="arrow">▼</span>
+        </div>
+        <div class="faq-a">
+          <div class="faq-a-inner">
+            Yes. The public participation process is real and has proven effective — the mitumba tax and rental tax hike were dropped after public feedback. You can submit a written memorandum to the National Assembly Finance Committee, attend public hearings in your county, petition your MP, or engage civil society groups. Act before the Bill is voted on in Parliament.
+            <div class="sw-note">🇰🇪 Kiswahili: Ndiyo. Ushiriki wa umma unafanya kazi. Unaweza kuandika barua ya maoni kwa Kamati ya Fedha ya Bunge, kuhudhuria vikao vya umma, au kuwasiliana na Mbunge wako.</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ─── GLOSSARY ─── -->
+  <section id="glossary">
+    <div class="section-heading">
+      <h2>Glossary of Terms</h2>
+      <span class="sw">Maana ya Maneno</span>
+    </div>
+    <div class="glossary-grid">
+      <div class="gloss-card">
+        <div class="term">Finance Bill</div>
+        <div class="sw-term">Muswada wa Fedha</div>
+        <p>Annual legislative proposal by Treasury to amend tax laws. Becomes the Finance Act once signed by the President.</p>
+      </div>
+      <div class="gloss-card">
+        <div class="term">VAT (Value Added Tax)</div>
+        <div class="sw-term">Kodi ya Thamani Ongezekaji</div>
+        <p>A tax charged at each stage of production/sale. In Kenya, the standard rate is 16%. You pay it on most goods and services.</p>
+      </div>
+      <div class="gloss-card">
+        <div class="term">Excise Duty</div>
+        <div class="sw-term">Ushuru wa Ziada</div>
+        <p>A tax on specific goods — like alcohol, tobacco, phones, and now betting winnings. Charged at manufacture or importation (or now, phone activation).</p>
+      </div>
+      <div class="gloss-card">
+        <div class="term">Withholding Tax</div>
+        <div class="sw-term">Kodi Inayokatwa Chanzo</div>
+        <p>Tax deducted before you receive payment. Your employer or platform takes it out automatically and pays KRA on your behalf.</p>
+      </div>
+      <div class="gloss-card">
+        <div class="term">KRA (Kenya Revenue Authority)</div>
+        <div class="sw-term">Mamlaka ya Mapato Kenya</div>
+        <p>The government body responsible for collecting taxes in Kenya. You file returns and pay taxes through KRA.</p>
+      </div>
+      <div class="gloss-card">
+        <div class="term">Capital Gains Tax (CGT)</div>
+        <div class="sw-term">Kodi ya Faida ya Uuzaji Mali</div>
+        <p>Tax on profit made when you sell an asset (land, shares) for more than you bought it for.</p>
+      </div>
+      <div class="gloss-card">
+        <div class="term">Tax Amnesty</div>
+        <div class="sw-term">Msamaha wa Kodi</div>
+        <p>A government programme allowing taxpayers to clear old debts by paying only the principal amount, with penalties and interest waived.</p>
+      </div>
+      <div class="gloss-card">
+        <div class="term">PPP (Public-Private Partnership)</div>
+        <div class="sw-term">Ubia wa Serikali na Sekta Binafsi</div>
+        <p>Projects jointly funded and managed by government and private companies — like toll roads, hospitals, or energy plants.</p>
+      </div>
+      <div class="gloss-card">
+        <div class="term">Agency Notice</div>
+        <div class="sw-term">Barua ya Makusanyo ya Kodi</div>
+        <p>A notice from KRA ordering a third party (e.g. your bank or employer) to pay your tax debt directly from your funds.</p>
+      </div>
+    </div>
+  </section>
+
 </main>
 
 <!-- FOOTER -->
@@ -729,21 +1409,23 @@
 <button id="back-top" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
 
 <script>
-  // small helper scripts
+  // Progress bar
   window.addEventListener('scroll', () => {
     const total = document.body.scrollHeight - window.innerHeight;
-    const pct = (window.scrollY / Math.max(total,1)) * 100;
-    const bar = document.getElementById('progress-bar');
-    if (bar) bar.style.width = pct + '%';
-    const bt = document.getElementById('back-top');
-    if (bt) bt.classList.toggle('visible', window.scrollY > 400);
+    const pct = (window.scrollY / total) * 100;
+    document.getElementById('progress-bar').style.width = pct + '%';
+    document.getElementById('back-top').classList.toggle('visible', window.scrollY > 400);
   });
+
+  // Tab switcher
   function switchTab(tab) {
     document.querySelectorAll('.tab-content').forEach(el => el.classList.remove('active'));
     document.querySelectorAll('.tab-btn').forEach(el => el.classList.remove('active'));
-    const el = document.getElementById('tab-' + tab);
-    if (el) el.classList.add('active');
+    document.getElementById('tab-' + tab).classList.add('active');
+    event.currentTarget.classList.add('active');
   }
+
+  // FAQ accordion
   function toggleFaq(el) {
     const item = el.parentElement;
     const wasOpen = item.classList.contains('open');
